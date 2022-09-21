@@ -3,8 +3,8 @@ try(DestroyDialog glb_Export) catch()
 rollout glb_Export "GLB文件导出" width:300
 (
 	editText edt1 "路径" 
-	radiobuttons rdo1 "动画是否导出"  labels:#( "none","anim") across:2
-	button btn1 "Button"	
+	radiobuttons rdo1 "动画是否导出"  labels:#( "false","true") across:2
+	button btn1 "导出"	
 	on btn1 pressed do 
 	(
 		filePath = edt1.text +"\\*.max"
